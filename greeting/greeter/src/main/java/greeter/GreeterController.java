@@ -17,6 +17,7 @@
 package greeter;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.sleuth.annotation.NewSpan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,6 +39,13 @@ public class GreeterController {
 	@Autowired
 	private WebClient.Builder webClient;
 
+	@Bean
+	@LoadBalanced
+	public WebClient.Builder loadBalancedWebClientBuilder() {
+		return WebClient.builder();
+	}
+
+
 	//https://cloud.spring.io/spring-cloud-commons/reference/html/
    // @Autowired
    // private ReactorLoadBalancerExchangeFilterFunction lbFunction;
@@ -56,10 +64,8 @@ public class GreeterController {
 	public Mono<String> helloWebclient(@RequestParam(value = "salutation", defaultValue = "Hello") String salutation,
 									   @RequestParam(value = "name", defaultValue = "Bob") String name) {
 
-		StringBuffer uri= new StringBuffer();
-		uri.append("/greeting?salutation=").append(salutation).append("&name=").append(name);
+		StringBuffer uri= new StringBuffer().append("/greeting?salutation=").append(salutation).append("&name=").append(name);
 
-		//return WebClient.builder().baseUrl("https://greeter-messages")
 		return webClient.baseUrl("http://localhost:9001")
 				.build().get()
 				.uri(uri.toString())
@@ -73,17 +79,12 @@ public class GreeterController {
 	public Mono<String> helloWebclient2(@RequestParam(value = "salutation", defaultValue = "Hello") String salutation,
 									   @RequestParam(value = "name", defaultValue = "Bob") String name) {
 
-		StringBuffer uri= new StringBuffer();
-		uri.append("/greeting?salutation=").append(salutation).append("&name=").append(name);
+		StringBuffer uri= new StringBuffer().append("/greeting?salutation=").append(salutation).append("&name=").append(name);
 
-		//return WebClient.builder().baseUrl("https://greeter-messages")
 		// no propagation the traceId when calling other service
 		return WebClient.builder().baseUrl("http://localhost:9001")
-				//.filter(lbFunction)
-
 				.build().get()
 				.uri(uri.toString())
-				//.header("x-b3-traceid", "0000000000000001")
 				.retrieve().bodyToMono(String.class);
 	}
 
