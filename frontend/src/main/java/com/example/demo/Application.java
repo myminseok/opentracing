@@ -23,12 +23,12 @@ public class Application {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
+	@Autowired
+	RestTemplate restTemplate;
+
 	@Bean
 	@LoadBalanced
 	RestTemplate restTemplate(){ return new RestTemplate();}
-
-	@Autowired
-	RestTemplate restTemplate;
 
 	@RequestMapping( value="/" )
 	public String method1() throws InterruptedException {
@@ -39,4 +39,14 @@ public class Application {
 	}
 
 
+	// client side loadbalancing using Ribbon.
+	// https://github.com/spring-guides/gs-client-side-load-balancing
+	// https://sabarada.tistory.com/54
+	@RequestMapping( value="/lb" )
+	public String method_lb() throws InterruptedException {
+		log.info("calling");
+		String response = restTemplate.getForObject("http://backend-service/",String.class);
+		log.info("Got response from backend [{}]", response);
+		return new StringBuilder("Got response from backend: ").append(response).toString();
+	}
 }

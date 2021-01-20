@@ -5,7 +5,16 @@ spring:
   application:
     name: frontend-app
   sleuth.sampler.probability: 1.0
-  zipkin.base-url: http://localhost:9411
+  zipkin:
+    enabled: false
+    base-url: http://localhost:9411
 logging:
   pattern:
     level: "%5p [${spring.zipkin.service.name:${spring.application.name:-}},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] [%X{ddd:-},%X{bp:-},%X{bpids:-}] [%X{op:-},%X{chunk:-},%X{i:-}]"
+
+backend-service:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: http://localhost:8083, http://localhost:8084
+    ServerListRefreshInterval: 2000
