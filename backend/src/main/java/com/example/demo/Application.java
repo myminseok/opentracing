@@ -8,12 +8,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import java.util.Date;
 
 
 @SpringBootApplication
 @RestController
+@EnableDiscoveryClient
 public class Application {
 
 	public static void main(String[] args) {

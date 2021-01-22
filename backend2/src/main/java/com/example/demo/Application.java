@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
-
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @RestController
+@EnableDiscoveryClient
 public class Application {
 
 	public static void main(String[] args) {
@@ -30,7 +31,7 @@ public class Application {
 	public String method1() throws InterruptedException {
 		log.info("called");
 		//String response = restTemplate.getForObject("http://localhost:9000",String.class);
-		return new StringBuilder().append(applicationName).append(" ").append(new Date()).toString();
+		return new StringBuilder().append(applicationName).append(" 2 ").append(new Date()).toString();
 	}
 
 

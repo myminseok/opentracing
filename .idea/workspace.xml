@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f06f90e9-6c0e-4f44-8b07-72226147cfcc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/opentracing.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-lb/src/main/java/com/example/demo/LoadBalancerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/demo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/demo/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/src/main/java/com/example/demo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/src/main/java/com/example/demo/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/com/example/demo/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/com/example/demo/BackendServiceConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/com/example/demo/LoadBalancerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/test/java/com/example/demo/App1ApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/frontend-lb">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/frontend-lb">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="frontend-lb" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="frontend-lb" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nQRqMf3DHBoPMTjXFTYVhRooyW" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests in 'frontend-lb'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/frontend-lb" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'frontend-lb'" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f06f90e9-6c0e-4f44-8b07-72226147cfcc" name="Default Changelist" comment="" />
+      <created>1611320517247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611320517247</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="204" y="114" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611332478675">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state x="204" y="114" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.837@0.23.1440.837" timestamp="1611332478675" />
+    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1611332748071">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state x="316" y="23" key="CommitChangelistDialog2/0.23.1440.837@0.23.1440.837" timestamp="1611332748071" />
+    <state width="1359" height="263" key="GridCell.Tab.0.bottom" timestamp="1611332753278">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state width="1359" height="263" key="GridCell.Tab.0.bottom/0.23.1440.837@0.23.1440.837" timestamp="1611332753278" />
+    <state width="1359" height="263" key="GridCell.Tab.0.center" timestamp="1611332753278">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state width="1359" height="263" key="GridCell.Tab.0.center/0.23.1440.837@0.23.1440.837" timestamp="1611332753278" />
+    <state width="1359" height="263" key="GridCell.Tab.0.left" timestamp="1611332753278">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state width="1359" height="263" key="GridCell.Tab.0.left/0.23.1440.837@0.23.1440.837" timestamp="1611332753278" />
+    <state width="1359" height="263" key="GridCell.Tab.0.right" timestamp="1611332753278">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state width="1359" height="263" key="GridCell.Tab.0.right/0.23.1440.837@0.23.1440.837" timestamp="1611332753278" />
+    <state width="1359" height="263" key="GridCell.Tab.1.bottom" timestamp="1611332753280">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state width="1359" height="263" key="GridCell.Tab.1.bottom/0.23.1440.837@0.23.1440.837" timestamp="1611332753280" />
+    <state width="1359" height="263" key="GridCell.Tab.1.center" timestamp="1611332753279">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state width="1359" height="263" key="GridCell.Tab.1.center/0.23.1440.837@0.23.1440.837" timestamp="1611332753279" />
+    <state width="1359" height="263" key="GridCell.Tab.1.left" timestamp="1611332753279">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state width="1359" height="263" key="GridCell.Tab.1.left/0.23.1440.837@0.23.1440.837" timestamp="1611332753279" />
+    <state width="1359" height="263" key="GridCell.Tab.1.right" timestamp="1611332753279">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state width="1359" height="263" key="GridCell.Tab.1.right/0.23.1440.837@0.23.1440.837" timestamp="1611332753279" />
+    <state x="240" y="188" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611332497855">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state x="240" y="188" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.837@0.23.1440.837" timestamp="1611332497855" />
+    <state x="655" y="186" width="598" height="548" key="find.popup" timestamp="1611321591115">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state x="655" y="186" width="598" height="548" key="find.popup/0.23.1440.837@0.23.1440.837" timestamp="1611321591115" />
+    <state x="425" y="210" width="670" height="675" key="run.anything.popup" timestamp="1611325651011">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state x="425" y="210" width="670" height="675" key="run.anything.popup/0.23.1440.837@0.23.1440.837" timestamp="1611325651011" />
+    <state x="619" y="184" width="670" height="676" key="search.everywhere.popup" timestamp="1611321603922">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state x="619" y="184" width="670" height="676" key="search.everywhere.popup/0.23.1440.837@0.23.1440.837" timestamp="1611321603922" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend-lb/src/main/java/com/example/demo/Application.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

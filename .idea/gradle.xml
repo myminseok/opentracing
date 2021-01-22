@@ -5,46 +5,11 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/app-zipkin" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/frontend-lb" />
         <option name="gradleHome" value="/usr/local/Cellar/gradle/6.8/libexec" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/app-zipkin" />
-          </set>
-        </option>
-        <option name="useQualifiedModuleNames" value="true" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
-        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.8/libexec" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/backend" />
-          </set>
-        </option>
-        <option name="useQualifiedModuleNames" value="true" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/frontend" />
-        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.8/libexec" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/frontend" />
-          </set>
-        </option>
-        <option name="useQualifiedModuleNames" value="true" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/greeting" />
-        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.8/libexec" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/greeting" />
-            <option value="$PROJECT_DIR$/greeting/greeter" />
-            <option value="$PROJECT_DIR$/greeting/greeter-messages" />
+            <option value="$PROJECT_DIR$/frontend-lb" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />
