@@ -15,6 +15,8 @@ import java.util.List;
 @Configuration
 public class LoadBalancerConfiguration {
 
+
+    //https://docs.spring.io/spring-cloud-commons/docs/3.0.0/reference/html/#custom-loadbalancer-configuration
     @Bean
     @Primary
     public ServiceInstanceListSupplier discoveryClientServiceInstanceListSupplier(
@@ -22,6 +24,7 @@ public class LoadBalancerConfiguration {
 
         ServiceInstanceListSupplier instanceListSupplier= ServiceInstanceListSupplier.builder()
                 .withDiscoveryClient()
+                //.withHealthChecks() ## it fails...
                 .build(context);
 
         return instanceListSupplier;

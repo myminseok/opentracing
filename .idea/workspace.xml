@@ -5,36 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f06f90e9-6c0e-4f44-8b07-72226147cfcc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/opentracing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-lb/src/main/java/com/example/demo/LoadBalancerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/demo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/demo/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/src/main/java/com/example/demo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/src/main/java/com/example/demo/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/com/example/demo/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/com/example/demo/BackendServiceConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/com/example/demo/LoadBalancerConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/test/java/com/example/demo/App1ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-lb/src/main/java/com/example/demo/LoadBalancerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-lb/src/main/java/com/example/demo/LoadBalancerConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
