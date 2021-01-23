@@ -1,0 +1,1 @@
+SPRING_PROFILES_ACTIVE=resilience4j gradle bootRun

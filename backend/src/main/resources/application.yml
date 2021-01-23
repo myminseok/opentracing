@@ -1,9 +1,6 @@
-server.port: 8083
 logging.level.org.springframework.cloud.sleuth: DEBUG
 
 spring:
-  application:
-    name: backend
   sleuth:
     sampler:
       probability: 1.0

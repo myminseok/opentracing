@@ -27,12 +27,24 @@ public class Application {
 	@Value("${spring.application.name}")
 	String applicationName;
 
+	@Value("${spring.profiles.active}")
+	String profiles;
+
 	@RequestMapping( value="/" )
-	public String method1() throws InterruptedException {
-		log.info("called");
-		//String response = restTemplate.getForObject("http://localhost:9000",String.class);
-		return new StringBuilder().append(applicationName).append(" ").append(new Date()).toString();
+	public String main() throws InterruptedException {
+		return new StringBuilder().append(profiles).append(" ").append(new Date()).toString();
 	}
+
+
+	@RequestMapping( value="/timeout" )
+	public String timeout() throws InterruptedException {
+		if("backend01".equals(profiles)) {
+			Thread.sleep(10000);
+		}
+		return new StringBuilder().append(profiles).append(" ").append(new Date()).toString();
+
+	}
+
 
 
 }
