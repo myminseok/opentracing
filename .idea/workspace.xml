@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f06f90e9-6c0e-4f44-8b07-72226147cfcc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/demo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/demo/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/backend-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/src/main/java/com/example/demo/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/src/test/java/com/example/demo/App1ApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +16,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/frontend-lb">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/frontend-lb2">
       <ProjectState />
     </projectState>
   </component>
@@ -195,6 +181,10 @@
       <screen x="0" y="23" width="1440" height="837" />
     </state>
     <state width="1359" height="263" key="GridCell.Tab.1.right/0.23.1440.837@0.23.1440.837" timestamp="1611339197029" />
+    <state x="550" y="192" key="RollbackChangesDialog" timestamp="1611562195499">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state x="550" y="192" key="RollbackChangesDialog/0.23.1440.837@0.23.1440.837" timestamp="1611562195499" />
     <state x="240" y="188" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611332497855">
       <screen x="0" y="23" width="1440" height="837" />
     </state>

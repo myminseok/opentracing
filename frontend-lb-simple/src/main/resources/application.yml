@@ -1,0 +1,49 @@
+server.port: 8082
+#logging.level.org.springframework.cloud.sleuth: DEBUG
+logging.level.org.springframework.cloud.client.discovery: DEBUG
+logging.level.org.springframework.cloud.loadbalancer: DEBUG
+logging.level.org.springframework.cloud.loadbalancer.core: DEBUG
+logging.level.com.netflix.discovery: DEBUG
+logging.level.reactor.core.publisher: DEBUG
+
+logging:
+  pattern:
+    level: "%5p [${spring.zipkin.service.name:${spring.application.name:-}},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] [%X{ddd:-},%X{bp:-},%X{bpids:-}] [%X{op:-},%X{chunk:-},%X{i:-}]"
+
+
+## https://docs.spring.io/spring-cloud/docs/Hoxton.SR9/reference/html/configprops.html
+spring:
+  application:
+    name: frontend-app
+
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+      retry:
+        enabled: true
+        backoff.enabled: true
+        max-retries-on-next-service-instance: 1
+        retry-on-all-operations: true
+      configurations: health-check
+      health-check:
+        path:
+          default: /actuator/health
+        refetch-instances: true
+        refetch-instances-interval: 1s
+      repeat-health-check: true
+
+
+eureka:
+  instance:
+    registryFetchIntervalSeconds: 1 # client cache
+    leaseRenewalIntervalInSeconds: 2
+    leaseExpirationDurationInSeconds: 5
+##    metadataMap:
+##      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+
+  client:
+    fetch-registry: true
+    initialInstanceInfoReplicationIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
