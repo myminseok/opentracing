@@ -21,17 +21,20 @@ spring:
       ribbon:
         enabled: false
       retry:
-        enabled: true
-        backoff.enabled: true
+        enabled: false ## false for reactive.
+        backoff.enabled: false ## false for reactive.
+        #retry-on-all-operations: true
+        avoidPreviousInstance: true
+        maxRetriesOnSameServiceInstance: 0
         max-retries-on-next-service-instance: 1
-        retry-on-all-operations: true
-      configurations: health-check
-      health-check:
-        path:
-          default: /actuator/health
-        refetch-instances: true
-        refetch-instances-interval: 1s
-      repeat-health-check: true
+        maxRetriesOnNextServiceInstance: 1
+#      configurations: health-check
+#      health-check:
+#        path:
+#          default: /actuator/health
+#        refetch-instances: true
+#        refetch-instances-interval: 1s
+#      repeat-health-check: true
 
 
 eureka:

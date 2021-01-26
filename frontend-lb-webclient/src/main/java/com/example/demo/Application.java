@@ -8,13 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerExchangeFilterFunction;
 import org.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction;
-import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
@@ -29,8 +26,8 @@ public class Application {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
-	@Autowired
-	private ReactorLoadBalancerExchangeFilterFunction lbFunction;
+	 @Autowired
+	 private ReactorLoadBalancerExchangeFilterFunction lbFunction;
 
 	@Bean
 	@LoadBalanced
@@ -43,7 +40,10 @@ public class Application {
 
 	@RequestMapping( value="/" )
 	public Mono<String> webclient() throws InterruptedException {
-		return webClientBuilder.build().get().uri("lb://backend/")
+		return webClientBuilder.baseUrl("lb://backend")
+				//.filter(lbFunction) //org.springframework.web.reactive.function.client.WebClientResponseException$ServiceUnavailable: 503 Service Unavailable from UNKNOWN
+				.build()
+				.get()
 				.retrieve().bodyToMono(String.class);
 	}
 

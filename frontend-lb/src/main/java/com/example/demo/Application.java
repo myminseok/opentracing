@@ -61,9 +61,12 @@ public class Application {
 
 	@RequestMapping( value="/wc" )
 	public String webclient() throws InterruptedException {
-		//log.info("calling");
-		Mono<String> response = webClientBuilder.build().get().uri("http://backend/")
+
+		WebClient webclient = webClientBuilder.build();
+
+		Mono<String> response = webclient.get().uri("lb://backend/")
 				.retrieve().bodyToMono(String.class);;
+
 		return new StringBuilder("Got response from: ").append(response.block()).toString();
 	}
 

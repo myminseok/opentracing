@@ -1,6 +1,6 @@
 plugins {
-	//id 'org.springframework.boot' version '2.4.1'
-	id 'org.springframework.boot' version '2.3.7.RELEASE'
+	id 'org.springframework.boot' version '2.4.1'
+	//id 'org.springframework.boot' version '2.3.7.RELEASE'
 
 	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
@@ -16,13 +16,13 @@ repositories {
 }
 
 ext {
-	//set('springCloudVersion', "2020.0.0")
-	set('springCloudVersion', "Hoxton.SR9")
+	set('springCloudVersion', "2020.0.0")
+	//set('springCloudVersion', "Hoxton.SR9")
 
 
 }
 dependencies {
-	//implementation 'org.springframework.boot:spring-boot-starter-web'
+//	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -40,4 +40,10 @@ dependencyManagement {
 
 test {
 	useJUnitPlatform()
+}
+//gradle bootRun -PbootDebug
+bootRun {
+	if (project.hasProperty("bootDebug")) {
+		jvmArgs = ["-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"]
+	}
 }

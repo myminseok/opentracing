@@ -24,11 +24,12 @@ public class LoadBalancerConfiguration {
 
         ServiceInstanceListSupplier instanceListSupplier= ServiceInstanceListSupplier.builder()
                 .withDiscoveryClient()
-                //.withHealthChecks() ## it fails...
+                //.withHealthChecks() //## it fails...
                 .build(context);
 
         return instanceListSupplier;
     }
+
 
     @Bean
 

@@ -1,11 +1,10 @@
 server.port: 8082
 #logging.level.org.springframework.cloud.sleuth: DEBUG
 logging.level.org.springframework.cloud.client.discovery: DEBUG
-logging.level.org.springframework.cloud.loadbalancer: DEBUG
-logging.level.org.springframework.cloud.loadbalancer.core: DEBUG
+logging.level.org.springframework.cloud.loadbalancer: TRACE
 logging.level.com.netflix.discovery: DEBUG
 logging.level.reactor.core.publisher: DEBUG
-
+logging.level.org.springframework.web.client.RestTemplate: DEBUG
 
 ## https://docs.spring.io/spring-cloud/docs/Hoxton.SR9/reference/html/configprops.html
 spring:
@@ -21,16 +20,20 @@ spring:
       ribbon:
         enabled: false
       retry:
-        enabled: true
+        enabled: false ## for reactive, set to false ## https://docs.spring.io/spring-cloud-commons/docs/current/reference/html/#retrying-failed-requests
         backoff.enabled: false
+        avoidPreviousInstance: true
+        maxRetriesOnSameServiceInstance: 0
+        maxRetriesOnNextServiceInstance: 1
 
-      configurations: health-check
-      health-check:
-        path:
-          default: /actuator/health
-        refetch-instances: true
-        refetch-instances-interval: 1s
-      repeat-health-check: true
+#      configurations: zone-preference
+#      configurations: health-check
+#      health-check:
+#        path:
+#          default: /actuator/health
+#        refetch-instances: true
+#        refetch-instances-interval: 1s
+#      repeat-health-check: true
 
 
 

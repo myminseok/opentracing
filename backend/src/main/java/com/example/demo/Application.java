@@ -32,6 +32,7 @@ public class Application {
 
 	@RequestMapping( value="/" )
 	public String main() throws InterruptedException {
+		log.info("called");
 		return new StringBuilder().append(profiles).append(" ").append(new Date()).toString();
 	}
 
