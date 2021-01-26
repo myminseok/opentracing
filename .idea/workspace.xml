@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f06f90e9-6c0e-4f44-8b07-72226147cfcc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-lb-webclient/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-lb-webclient/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-lb-webclient/src/main/java/com/example/demo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-lb-webclient/src/main/java/com/example/demo/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-lb-webclient/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-lb-webclient/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/demo/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/demo/EurekaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/eureka-server">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/frontend-lb">
       <ProjectState />
     </projectState>

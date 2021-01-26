@@ -14,3 +14,10 @@ eureka:
 #    response-cache-update-interval-ms: 3000 #https://cloud.spring.io/spring-cloud-static/Dalston.SR5/multi/multi__appendix_compendium_of_configuration_properties.html
 
 
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: health, info, prometheus
