@@ -21,7 +21,7 @@ spring:
       ribbon:
         enabled: false
       retry:
-        enabled: false ## false for reactive.
+        enabled: false ## for reactive, set to false ## https://docs.spring.io/spring-cloud-commons/docs/current/reference/html/#retrying-failed-requests
         backoff.enabled: false ## false for reactive.
         #retry-on-all-operations: true
         avoidPreviousInstance: true

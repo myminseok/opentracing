@@ -26,14 +26,15 @@ public class Application {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
-	 @Autowired
-	 private ReactorLoadBalancerExchangeFilterFunction lbFunction;
+//	 @Autowired
+//	 private ReactorLoadBalancerExchangeFilterFunction lbFunction;
 
 	@Bean
 	@LoadBalanced
 	public WebClient.Builder loadBalancedWebClientBuilder() {
 		return WebClient.builder();
 	}
+
 	@Autowired
 	private WebClient.Builder webClientBuilder;
 	
