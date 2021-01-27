@@ -1,3 +1,6 @@
+rule_files:
+  - "alert.rules"
+
 global:
   scrape_interval: 5s
 

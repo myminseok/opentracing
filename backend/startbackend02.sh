@@ -1,1 +1,1 @@
-SPRING_PROFILES_ACTIVE=backend02 gradle bootRun
+SPRING_PROFILES_ACTIVE=backend02 gradle clean clean bootRun
