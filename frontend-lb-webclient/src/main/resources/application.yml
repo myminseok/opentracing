@@ -1,33 +1,30 @@
 server.port: 8082
 #logging.level.org.springframework.cloud.sleuth: DEBUG
-logging.level.org.springframework.cloud.client.discovery: DEBUG
-logging.level.org.springframework.cloud.loadbalancer: DEBUG
-logging.level.org.springframework.cloud.loadbalancer.core: DEBUG
-logging.level.com.netflix.discovery: DEBUG
-logging.level.reactor.core.publisher: DEBUG
-
+logging.level.org.springframework.cloud.client.discovery: INFO
+logging.level.com.netflix.discovery: INFO
+logging.level.org.springframework.cloud.client.loadbalancer: DEBUG
 logging:
   pattern:
     level: "%5p [${spring.zipkin.service.name:${spring.application.name:-}},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] [%X{ddd:-},%X{bp:-},%X{bpids:-}] [%X{op:-},%X{chunk:-},%X{i:-}]"
 
-
 ## https://docs.spring.io/spring-cloud/docs/Hoxton.SR9/reference/html/configprops.html
+## https://docs.spring.io/spring-cloud-commons/docs/current/reference/html/#retrying-failed-requests
+
 spring:
   application:
     name: frontend-app
-
   cloud:
     loadbalancer:
       ribbon:
         enabled: false
       retry:
-        enabled: false ## for reactive, set to false ## https://docs.spring.io/spring-cloud-commons/docs/current/reference/html/#retrying-failed-requests
-        backoff.enabled: false ## false for reactive.
-        #retry-on-all-operations: true
-        avoidPreviousInstance: true
-        maxRetriesOnSameServiceInstance: 0
-        max-retries-on-next-service-instance: 1
-        maxRetriesOnNextServiceInstance: 1
+        enabled: true ## set true for RetryableLoadBalancerExchangeFilterFunction
+#        backoff.enabled: false
+#        retry-on-all-operations: true
+#        avoidPreviousInstance: true
+#        maxRetriesOnSameServiceInstance: 0
+#        max-retries-on-next-service-instance: 1
+#        maxRetriesOnNextServiceInstance: 1
 #      configurations: health-check
 #      health-check:
 #        path:
@@ -38,13 +35,12 @@ spring:
 
 
 eureka:
-  instance:
-    registryFetchIntervalSeconds: 1 # client cache
-    leaseRenewalIntervalInSeconds: 2
-    leaseExpirationDurationInSeconds: 5
+#  instance:
+#    registryFetchIntervalSeconds: 1 # client cache
+#    leaseRenewalIntervalInSeconds: 2
+#    leaseExpirationDurationInSeconds: 5
 ##    metadataMap:
 ##      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
-
   client:
     fetch-registry: true
     initialInstanceInfoReplicationIntervalSeconds: 5
