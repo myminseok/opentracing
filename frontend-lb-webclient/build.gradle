@@ -1,6 +1,7 @@
 plugins {
-	id 'org.springframework.boot' version '2.4.1'
-	//id 'org.springframework.boot' version '2.3.7.RELEASE'
+	id 'org.springframework.boot' version '2.5.0'
+	//id 'org.springframework.boot' version '2.4.1' // matches with springCloudVersion 2020.0.0 
+	//id 'org.springframework.boot' version '2.3.11.RELEASE'
 
 	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
@@ -16,8 +17,10 @@ repositories {
 }
 
 ext {
-	set('springCloudVersion', "2020.0.0")
-	//set('springCloudVersion', "Hoxton.SR9")
+	//ReryableLoadBalancerExchangeFilterFunction is supported from springCloudVersion 2020.0.0
+	set('springCloudVersion', "2020.0.3") 
+	//set('springCloudVersion', "2020.0.0") 
+	//set('springCloudVersion', "Hoxton.SR11") 
 
 
 }
